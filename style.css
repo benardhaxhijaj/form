@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.image {
+    background-image: url(/img/pexels-alexander-ant-4585185.jpg);
+    background-position: center;
+    background-size: 37vw 100vh;
+    background-repeat: no-repeat;
+    width: 37vw;
+    height: 100vh;
+}
+
+.line {
+    background-color: white;
+    background-size: 3vw 100vh;
+    width: 3vw;
+    position: relative;
+    box-shadow: -20px 0px 50px 60px white;
+}
+
+.right {
+    width: 60vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.text {
+    padding-left: 3vw;
+}
+
+.dummy {
+    font-weight: 400;
+    width: 90%;
+    font-size: 1.2rem;
+    padding-left: 55px;
+}
+
+.remote {
+    margin: 40px 0 40px;
+}
+
+.forma {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px 0 20px 40px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.3);
+}
+
+.formatext {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    text-transform: uppercase;
+    opacity: 70%;
+}
+
+.formatext {
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #E1EBEE;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid tomato;
+}
+
+button {
+    background-color: aquamarine;
+    padding: 7px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: slategray;
+    border: 2px solid tomato;
+    margin: 40px 0;
+    width: 22%;
+}
+
+button:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    gap: 5px;
+    padding-top: 30px;
+    padding-left: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 720px) {
+    .content {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .image {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+
+    .right {
+        width: auto;
+        height: auto;
+    }
+
+    .dummy {
+        width: auto;
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    .left {
+        padding: 10px 20px;
+    }
+
+    .remote {
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .forma {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column {
+        text-align: center;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+
+    .button,
+    .login {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .login {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+        justify-content: center;
+    }
+
+}
