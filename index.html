@@ -27,7 +27,7 @@
                     deepest dreams Sing up now to get started. </p>
                 <p class="remote">You know you want to.</p>
             </div>
-            <form action="#">
+            <form action="#" onsubmit="return validateForm()">
                 <div class="forma left">
 
                     <p class="formatext">Let's do this!</p>
@@ -44,8 +44,13 @@
                         <label for="email">Email</label>
                         <input type="email" placeholder="someone@example.com">
                     </div>
-                    <div class="column">
-                        <label for="phone">Phone number</label>
+                    <div class="column phoneColumn">
+                        <label for="phone" id="phoneText">Phone Number</label>
+                        <select name="countryCode" id="countryCode">
+                            <option value="+1">(USA) +1</option>
+                            <option value="+44">(UK) +44</option>
+                            <option value="+91">(India) +91</option>
+                        </select>
                         <input type="tel" id="phone">
                     </div>
                     <div class="column">
@@ -64,6 +69,7 @@
 
         </div>
     </div>
+    <script src="/app.js"></script>
 </body>
 
 </html>
